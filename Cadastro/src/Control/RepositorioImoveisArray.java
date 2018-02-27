@@ -1,4 +1,3 @@
-
 package Control;
 
 import java.util.ArrayList;
@@ -6,35 +5,46 @@ import java.util.ArrayList;
 import Model.Imovel;
 
 public class RepositorioImoveisArray {
-	ArrayList <Imovel> listaImovel;
+	ArrayList<Imovel> listaImovel = new ArrayList<Imovel>();
+
 	public RepositorioImoveisArray() {
-        this.listaImovel = new ArrayList<Imovel>();
-    }
+		this.listaImovel = new ArrayList<Imovel>();
+	}
 
-	public void procurarIndice( int codigo) {
-		if(listaImovel != null && !listaImovel.isEmpty())
+	public void procurarIndice(int codigo) {
+		if (listaImovel != null && !listaImovel.isEmpty())
 			this.listaImovel.indexOf(listaImovel);
-			  
 	}
 
-	/*public void AlterarMedico(Imovel medico) {
-		for (int i = 0; i < this.listaImovel.size(); i++) {
-			if (this.listaMedico.get(i).getCrm().equals(medico.getCrm())) {
-				this.listaMedico.set(i, medico);
-			}
+	public void procurarImovel(int codigo) {
+		if (listaImovel != null) {
+			this.listaImovel.get(codigo);
+		} else {
+			this.listaImovel = null;
 		}
 	}
 
-	public void ExcluirMedico(Imovel medico) {
-		for (int i = 0; i < this.listaMedico.size(); i++) {
-			if (this.listaMedico.get(i).getCrm().equals(medico.getCrm())) {
-				this.listaMedico.remove(i);
-			}
+	public void inserir(Imovel imovel) {
+		if (!listaImovel.isEmpty()) {
+			listaImovel.add(imovel);
 		}
 	}
 
-	public ArrayList<Imovel> ListarMedico() {
-		return listaMedico;
-	}*/
+	/*
+	 * https://www.youtube.com/watch?v=ISFI-gfBdgA public void
+	 * 
+	 * public boolean atualizar(Imovel i) → Atualiza o imóvel passado como
+	 * parâmetro, retornando falso se não encontrar o imóvel.
+	 * 
+	 * 
+	 * public boolean remover(String numero) → Remove o imóvel identificado pelo
+	 * número passado como parâmetro, retornando falso se não encontrar o
+	 * imóvel.
+	 * 
+	 * 
+	 * public boolean existe(String numero) → Retorna verdadeiro se localizou no
+	 * repositório o imóvel identificado pelo número passado como parâmetro ou
+	 * falso se não encontrar o imóvel.
+	 */
 
 }
