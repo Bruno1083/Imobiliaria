@@ -79,4 +79,13 @@ public class Imovel {
 		this.numeroBanheiros = numeroBanheiros;
 	}
 
+
+	@Override
+	public String toString() {
+		return "Imovel [codigo=" + codigo + ", area=" + area + ", garagem=" + garagem + ", tipoImovel=" + tipoImovel
+				+ ", numeroQuartos=" + numeroQuartos + ", precoImovel=" + precoImovel + ", bairro=" + bairro
+				+ ", numeroBanheiros=" + numeroBanheiros + "]";
+	}
+	
+
 }

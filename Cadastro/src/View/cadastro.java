@@ -152,9 +152,37 @@ public class cadastro extends JFrame {
 		contentPane.add(tfNumeroBanheiro);
 		tfNumeroBanheiro.setColumns(10);
 		
-		JButton btnNewButton = new JButton("Primeiro");
-		btnNewButton.setBounds(76, 260, 91, 23);
-		contentPane.add(btnNewButton);
+		JButton btnPrimeiro = new JButton("Primeiro");
+		btnPrimeiro.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				/*int codigo = Integer.parseInt(tfCodigo.getText());
+				double area = Double.parseDouble(tfArea.getText());
+				int garagem = Integer.parseInt(tfGaragem.getText());
+				String tipoImovel = tfTipoImovel.getText();
+				int numeroQuartos = Integer.parseInt(tfNumeroQuartos.getText());
+				double precoImovel = Double.parseDouble(tfPrecoImovel.getText());
+				String bairro = tfBairro.getText();
+				int numeroBanheiros = Integer.parseInt(tfNumeroBanheiro.getText());
+				
+				Imovel imovel = new Imovel(codigo, area, garagem, tipoImovel, numeroQuartos, precoImovel, bairro, numeroBanheiros);
+						
+						r.procurarImovel(codigo);
+						
+						System.out.println(imovel);
+						
+						tfCodigo.setText("");
+						tfArea.setText("");
+						tfGaragem.setText("");
+						tfTipoImovel.setText("");
+						tfNumeroQuartos.setText("");
+						tfPrecoImovel.setText("");
+						tfBairro.setText("");
+						tfNumeroBanheiro.setText("");*/
+			}
+		});
+		btnPrimeiro.setBounds(76, 260, 91, 23);
+		contentPane.add(btnPrimeiro);
 		
 		JButton btnNewButton_1 = new JButton("Anterior");
 		btnNewButton_1.setBounds(177, 260, 91, 23);
@@ -183,6 +211,17 @@ public class cadastro extends JFrame {
 				Imovel imovel = new Imovel(codigo, area, garagem, tipoImovel, numeroQuartos, precoImovel, bairro, numeroBanheiros);
 						
 						r.inserir(imovel);
+						
+						System.out.println(imovel);
+						
+						tfCodigo.setText("");
+						tfArea.setText("");
+						tfGaragem.setText("");
+						tfTipoImovel.setText("");
+						tfNumeroQuartos.setText("");
+						tfPrecoImovel.setText("");
+						tfBairro.setText("");
+						tfNumeroBanheiro.setText("");
 			}
 		});
 		btnCadastrarImovel.setBounds(480, 260, 91, 23);
