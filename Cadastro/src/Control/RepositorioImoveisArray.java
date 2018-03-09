@@ -31,8 +31,7 @@ public class RepositorioImoveisArray {
 	}
 
 	/*
-	 * https://www.youtube.com/watch?v=ISFI-gfBdgA public void
-	 * 
+	 
 	 * public boolean atualizar(Imovel i) → Atualiza o imóvel passado como
 	 * parâmetro, retornando falso se não encontrar o imóvel.
 	 * 
